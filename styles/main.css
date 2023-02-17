@@ -4,5 +4,6 @@ h2 {
 
 .bio{
     margin: 20px;
-    border  
+    border-bottom: 4px solid purple;
+    padding: 20px;
 }
