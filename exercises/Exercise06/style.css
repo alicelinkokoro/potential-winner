@@ -24,8 +24,12 @@ a{
     color: white
 }
 
-li:hover {
+li {
+    padding: 0 40px;
+  }
 
+li:hover {
+    animation: colors 3s ease-in 0.2s;
 }
 
 @keyframes colors {
