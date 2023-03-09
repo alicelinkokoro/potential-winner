@@ -27,6 +27,10 @@ p{
 
 }
 
+audio{
+    color:black;
+}
+
 img{
     width: 550px;
     padding-bottom: 10px; 
