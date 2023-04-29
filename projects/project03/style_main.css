@@ -1,9 +1,19 @@
 .record_thumbnail img {
-    width: 200px;
+    /* width: 200px; */
     height: 200px;
     
   }
 
   ul{
     list-style-type: none;
-  }
+
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap
+    　
+    }
+  
+    *{
+      display: flex;
+      flex-wrap: wrap
+      }
