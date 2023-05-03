@@ -57,16 +57,16 @@ const records = [
     let screenHeight = window.screen.height
 
     if (screenWidth < window.screen.width/2, screenHeight< window.screen.height) {
-      appendChild (record[0].image)
+      appendChild (records[0].image)
     }
     if (screenWidth > window.screen.width/2, screenHeight< window.screen.height) {
-      appendChild (record[1].image)
+      appendChild (records[1].image)
     }
     if (screenWidth < window.screen.width/2, screenHeight> window.screen.height) {
-      appendChild (record[2].image)
+      appendChild (records[2].image)
     }
     if (screenWidth > window.screen.width/2, screenHeight> window.screen.height) {
-      appendChild (record[3].image)
+      appendChild (records[3].image)
     }
     
   //recordThumbnail.addEventListener("click", openAlbumPage)
