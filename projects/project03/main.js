@@ -10,7 +10,7 @@ const records = [
         title: 'Last Leaf',
         releaseYear: 2017,
         artist: 'Danish String Quartet',
-        image: ['https://user-images.githubusercontent.com/101160183/235358677-02d94bb6-d409-4c10-a61f-cf9c1c3b2f28.jpg', 'https://user-images.githubusercontent.com/101160183/235358697-ae8a762a-f63e-44cc-9318-e5c8f36cd3f8.jpg']
+        image: ['https://user-images.githubusercontent.com/101160183/235360611-3fe393b4-1e89-40ea-ad2b-17978ea273f9.jpg', 'https://user-images.githubusercontent.com/101160183/235360631-87867eb7-1ee9-41f7-9fd3-cd3badd4db73.jpg']
         link: '02Last Leaf.html',
     },
 
@@ -27,7 +27,7 @@ const records = [
      artist: 'Tord Gustavsen Trio',
      image: ['https://user-images.githubusercontent.com/101160183/235358677-02d94bb6-d409-4c10-a61f-cf9c1c3b2f28.jpg', 'https://user-images.githubusercontent.com/101160183/235358697-ae8a762a-f63e-44cc-9318-e5c8f36cd3f8.jpg']
      link: '04Changing Places.html',
-  },
+  }
 ]
 
   
@@ -48,8 +48,25 @@ const records = [
         list_item.appendChild(image);
   
     }
+  }
 
     renderRecordsToPage(records);
     
+
+    let screenWidth = window.screen.width
+    let screenHeight = window.screen.height
+
+    if (screenWidth < window.screen.width/2, screenHeight< window.screen.height) {
+      appendChild (record[0].image)
+    }
+    if (screenWidth > window.screen.width/2, screenHeight< window.screen.height) {
+      appendChild (record[1].image)
+    }
+    if (screenWidth < window.screen.width/2, screenHeight> window.screen.height) {
+      appendChild (record[2].image)
+    }
+    if (screenWidth > window.screen.width/2, screenHeight> window.screen.height) {
+      appendChild (record[3].image)
+    }
     
   //recordThumbnail.addEventListener("click", openAlbumPage)
