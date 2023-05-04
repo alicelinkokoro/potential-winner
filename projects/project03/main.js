@@ -50,6 +50,7 @@ const records = [
 
         let image = document.createElement("img");
         image.setAttribute("src", records[i].image[0]);
+      
 
 
         if (records[i].title === 'Khmer') {
