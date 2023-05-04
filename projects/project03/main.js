@@ -76,8 +76,9 @@ const records = [
           [
             // keyframes
             { transform: "translateX(0px)", opacity: 1},
-            { transform: "translateX(" + Math.random()*element.left + "px) scale(" + Math.random()*i + ") translateY(" + Math.random()*element.bottom + "px)"  },
-            { transform: "translateY(" + Math.random()*i + "px)", opacity: 0 },
+            { transform: "translateX(" + Math.random()*element.left + "px)  translateY(" + Math.random()*element.bottom + "px)"  },
+            { transform: "translateY(" + Math.random()*i + "px)", opacity: 0.1 },
+            // scale(" + Math.random()*i + ")
           ],
           {
             // timing options
