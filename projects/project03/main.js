@@ -55,7 +55,6 @@ const records = [
         if (records[i].title === 'Khmer') {
           one.appendChild(list_item);
           list_item.appendChild(image);
-          list_item.appendChild(image);
         }
         if (records[i].title === 'Skala') {
           two.appendChild(list_item);
@@ -70,12 +69,32 @@ const records = [
           list_item.appendChild(image);
         }
 
-        
-  
+
+        let element = image.getBoundingClientRect();
+
+        image.animate(
+          [
+            // keyframes
+            { transform: "translateX(0px)", opacity: 1},
+            { transform: "translateX(" + Math.random()*element.left + "px) scale(" + Math.random()*i + ") translateY(" + Math.random()*element.bottom + "px)"  },
+            { transform: "translateY(" + Math.random()*i + "px)", opacity: 0 },
+          ],
+          {
+            // timing options
+            duration: 20000,
+            iterations: Infinity,
+          }
+        )
+
+
+
+
     }
   }
 
-    renderRecordsToPage(records);
+ 
+
+    window.addEventListener('load', renderRecordsToPage(records));
     
 
     
