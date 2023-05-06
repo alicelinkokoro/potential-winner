@@ -6,14 +6,14 @@ const records = [
       title: 'Skala',
       releaseYear: 2011,
       artist: 'Mathias Eick',
-      image: ['https://user-images.githubusercontent.com/101160183/235358677-02d94bb6-d409-4c10-a61f-cf9c1c3b2f28.jpg', 'https://user-images.githubusercontent.com/101160183/235358697-ae8a762a-f63e-44cc-9318-e5c8f36cd3f8.jpg', ],
+      image: ['https://user-images.githubusercontent.com/101160183/235358677-02d94bb6-d409-4c10-a61f-cf9c1c3b2f28.jpg', 'https://user-images.githubusercontent.com/101160183/235358697-ae8a762a-f63e-44cc-9318-e5c8f36cd3f8.jpg','https://user-images.githubusercontent.com/101160183/235358915-c5ba30d5-d47f-4039-b018-77897458b8e2.jpg','https://user-images.githubusercontent.com/101160183/235358932-04e96860-ca96-4069-b5ab-bb8dc21de921.jpg' ],
       link: '01Skala.html',
     },
       {
         title: 'LastLeaf',
         releaseYear: 2017,
         artist: 'Danish String Quartet',
-        image: ['https://user-images.githubusercontent.com/101160183/235360611-3fe393b4-1e89-40ea-ad2b-17978ea273f9.jpg', 'https://user-images.githubusercontent.com/101160183/235360631-87867eb7-1ee9-41f7-9fd3-cd3badd4db73.jpg'],
+        image: ['https://user-images.githubusercontent.com/101160183/235360611-3fe393b4-1e89-40ea-ad2b-17978ea273f9.jpg', 'https://user-images.githubusercontent.com/101160183/235360631-87867eb7-1ee9-41f7-9fd3-cd3badd4db73.jpg','https://user-images.githubusercontent.com/101160183/235360643-b07e5267-1c1d-4297-b90d-450b05abd255.jpg','https://user-images.githubusercontent.com/101160183/235360704-b7043871-6ddc-44be-8764-f05777670e5f.jpg'],
         link: '02Last Leaf.html',
     },
 
@@ -28,7 +28,7 @@ const records = [
      title: 'ChangingPlaces',
      releaseYear: 2003,
      artist: 'Tord Gustavsen Trio',
-     image: ['https://user-images.githubusercontent.com/101160183/235361054-f0dd8790-5bc7-4fda-b141-95de4a37acdf.jpg', 'https://user-images.githubusercontent.com/101160183/235361084-84a77e56-adbf-4e57-8b1f-03adfc20e718.jpg'],
+     image: ['https://user-images.githubusercontent.com/101160183/235361054-f0dd8790-5bc7-4fda-b141-95de4a37acdf.jpg', 'https://user-images.githubusercontent.com/101160183/235361084-84a77e56-adbf-4e57-8b1f-03adfc20e718.jpg','https://user-images.githubusercontent.com/101160183/235361098-57cad074-39c6-432c-9fc6-dd91921b7543.jpg','(https://user-images.githubusercontent.com/101160183/235361189-37be63d3-d072-4b75-bbf0-7921da75a298.jpg', 'https://user-images.githubusercontent.com/101160183/235361200-558cb491-b584-45ed-b003-7f2e0996139e.jpg'],
      link: '04Changing Places.html',
   }
 ]
