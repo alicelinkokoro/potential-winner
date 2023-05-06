@@ -7,12 +7,21 @@ function  sayHello () {
 sayHello ()
 */
 
-const fruits = ["apple", "orange","grapes"]
+let nouns = ["heart", "rainbow", "ocean"];
+let verbs = ["look", "make", "continue"];
+let adjectives = ["good", "different", "possible"];
 
-console.log(fruits[1])
+let noun = nouns[Math.floor(Math.random()*nouns.length)]
+let verb = verbs[Math.floor(Math.random()*verbs.length)]
+let adjective = adjectives[Math.floor(Math.random()*adjectives.length)]
 
-const students = ["alice", "han", "chi chi", "brent"]
-for(let index = 0; index < students.length; index++) {
-    console.log ("Name of student is :" + students[index]);
-    index++;
-}
+console.log(noun)
+console.log(verb)
+console.log(adjective)
+
+let sentence = `My ${noun} leaps ${adjective} when I ${verb} a rainbow in the sky`
+
+console.log(sentence)
+document.write(sentence)
+
+console.log(nouns[Math.floor(Math.random()*nouns.length)])
