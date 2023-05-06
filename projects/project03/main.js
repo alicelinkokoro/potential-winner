@@ -6,7 +6,7 @@ const records = [
       title: 'Skala',
       releaseYear: 2011,
       artist: 'Mathias Eick',
-      image: ['https://user-images.githubusercontent.com/101160183/235358677-02d94bb6-d409-4c10-a61f-cf9c1c3b2f28.jpg', 'https://user-images.githubusercontent.com/101160183/235358697-ae8a762a-f63e-44cc-9318-e5c8f36cd3f8.jpg'],
+      image: ['https://user-images.githubusercontent.com/101160183/235358677-02d94bb6-d409-4c10-a61f-cf9c1c3b2f28.jpg', 'https://user-images.githubusercontent.com/101160183/235358697-ae8a762a-f63e-44cc-9318-e5c8f36cd3f8.jpg', ],
       link: '01Skala.html',
     },
       {
@@ -21,7 +21,7 @@ const records = [
       title: 'Khmer',
       releaseYear: 2019,
       artist: 'Nils Petter Molvaer',
-      image: ['https://user-images.githubusercontent.com/101160183/235360757-2af0675b-fb81-44f0-8217-16a66242ea18.jpg', 'https://user-images.githubusercontent.com/101160183/235360790-d853148f-f7a1-4319-8297-708515876e61.jpg'],
+      image: ['https://user-images.githubusercontent.com/101160183/235360757-2af0675b-fb81-44f0-8217-16a66242ea18.jpg', 'https://user-images.githubusercontent.com/101160183/235360790-d853148f-f7a1-4319-8297-708515876e61.jpg', 'https://user-images.githubusercontent.com/101160183/235360809-2bee19a8-14d6-414d-a368-30bdd51984c3.jpg'],
       link: '03Khmer.html',
   },
      {
@@ -48,11 +48,11 @@ const records = [
         let list_item = document.createElement("p");
         list_item.classList.add(records[i].title, "title");
 
-        let image = document.createElement("img");
-        image.setAttribute("src", records[i].image[0]);
-      
+        for (let h = 0; h <records[i].image.length; h++) {
 
-
+        image = document.createElement("img");
+        image.setAttribute("src", records[i].image[h]);
+        
         if (records[i].title === 'Khmer') {
           one.appendChild(list_item);
           list_item.appendChild(image);
@@ -68,28 +68,34 @@ const records = [
         if (records[i].title === 'ChangingPlaces') {
           four.appendChild(list_item);
           list_item.appendChild(image);
+          }
+
+          let element = image.getBoundingClientRect();
+
+          image.animate(
+            [
+              // keyframes
+              { transform: "translateX(0px)", opacity: 1},
+              { transform: "translateX(" + Math.random()*element.left + "px)  translateY(" + Math.random()*element.bottom + "px)"  },
+              { transform: "translateY(" + Math.random()*i + "px)", opacity: 0.1 },
+              // scale(" + Math.random()*i + ")
+            ],
+            {
+              // timing options
+              duration: 20000,
+              iterations: Infinity,
+            }
+          )
+  
         }
 
+         
 
-        let element = image.getBoundingClientRect();
-
-        image.animate(
-          [
-            // keyframes
-            { transform: "translateX(0px)", opacity: 1},
-            { transform: "translateX(" + Math.random()*element.left + "px)  translateY(" + Math.random()*element.bottom + "px)"  },
-            { transform: "translateY(" + Math.random()*i + "px)", opacity: 0.1 },
-            // scale(" + Math.random()*i + ")
-          ],
-          {
-            // timing options
-            duration: 20000,
-            iterations: Infinity,
-          }
-        )
+        
+        
 
 
-
+       
 
     }
   }
