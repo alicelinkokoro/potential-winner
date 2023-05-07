@@ -113,7 +113,6 @@ function filterFn(event) {
   if(event.target.classList.contains("filter-btn")){
     // select the current active button
     let activeBtn = filterBtns.querySelector(".active")
-    activeBtn.classList.remove("active")
 
     // apply the active class to the target
     event.target.classList.add("active")
@@ -124,6 +123,8 @@ function filterFn(event) {
       if(titles[i].classList.contains(filterValue) || filterValue === 'all'){
         titles[i].classList.remove('hide')
         titles[i].classList.add('show')
+        // let audio = new Audio("src", );
+        //  audio.play();
       } else {
         titles[i].classList.remove('show')
         titles[i].classList.add('hide')
@@ -147,80 +148,6 @@ filterBtns.addEventListener("click", filterFn);
 
 
 
-
-
-
-
-
-
-
-// //add filer function
-
-// function applyFilter(filters) {
-//   const galleryItems = document.querySelectorAll("img");
-//   galleryItems.forEach((item) => {
-//     if (filter === "all" || item.dataset.title === filter) {
-//       item.style.display = "block";
-//     } else {
-//       item.style.display = "none";
-//     }
-//   });
-// }
-
-
-// // Add event listeners for filter buttons
-// const filterButtons = document.querySelectorAll(".filter-btn");
-// filterButtons.forEach((button) => {
-//   button.addEventListener("click", (event) => {
-//     const filter = event.target.dataset.filter;
-//     applyFilter(filter);
-
-//     // Set the active filter button
-//     filterButtons.forEach((btn) => {
-//       if (btn === event.target) {
-//         btn.classList.add("active");
-//       } else {
-//         btn.classList.remove("active");
-//       }
-//     });
-//   });
-// });
-
-
-
-
-
-//     let filterBtns = document.querySelector(".filters");
-// let cards = document.querySelectorAll("img");
-
-// function filterFn(e) {
-//   // console.log("clicked", e.target);
-//   if (e.target.classList.contains("filter-btn")) {
-//     filterBtns.querySelector(".active").classList.remove("active");
-
-//     e.target.classList.add("active");
-
-//     const filterValue = e.target.getAttribute("data-filter");
-
-//     for (let i = 0; i < cards.length; i++) {
-//       if (cards[i].classList.contains(filterValue) || filterValue === "all") {
-//         cards[i].classList.remove("hide");
-//         cards[i].classList.add("show");
-//       } else {
-//         cards[i].classList.remove("show");
-//         cards[i].classList.add("hide");
-//       }
-//     }
-//   }
-// }
-// filterBtns.addEventListener("click", filterFn);
-
-
-
-
-    
-
-    
 
 
 
