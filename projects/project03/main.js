@@ -117,7 +117,7 @@ function filterFn(event) {
     // apply the active class to the target
     event.target.classList.add("active")
 
-    const filterValue = event.target.getAttribute('data-filter') // yellow | red
+    const filterValue = event.target.getAttribute('data-filter') 
 
     for(let i = 0; i < records.length; i++){
       if(titles[i].classList.contains(filterValue) || filterValue === 'all'){
