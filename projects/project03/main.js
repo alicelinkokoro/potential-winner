@@ -96,9 +96,42 @@ const records = [
     }
   }
 
- 
 
     window.addEventListener('load', renderRecordsToPage(records));
+
+
+
+
+// filter
+
+    let filterBtns = document.querySelector(".filters");
+let cards = document.querySelectorAll("img");
+
+function filterFn(e) {
+  // console.log("clicked", e.target);
+  if (e.target.classList.contains("filter-btn")) {
+    filterBtns.querySelector(".active").classList.remove("active");
+
+    e.target.classList.add("active");
+
+    const filterValue = e.target.getAttribute("data-filter");
+
+    for (let i = 0; i < cards.length; i++) {
+      if (cards[i].classList.contains(filterValue) || filterValue === "all") {
+        cards[i].classList.remove("hide");
+        cards[i].classList.add("show");
+      } else {
+        cards[i].classList.remove("show");
+        cards[i].classList.add("hide");
+      }
+    }
+  }
+}
+filterBtns.addEventListener("click", filterFn);
+
+
+
+
     
 
     
@@ -106,20 +139,4 @@ const records = [
 
 
       
-    // let screenWidth = window.screen.width
-    // let screenHeight = window.screen.height
-
-    // if (screenWidth < window.screen.width/2 & screenHeight< window.screen.height/2) {
-    //   appendChild (records[0].image)
-    // }
-    // if (screenWidth > window.screen.width/2 & screenHeight< window.screen.height/2) {
-    //   appendChild (records[1].image)
-    // }
-    // if (screenWidth < window.screen.width/2 & screenHeight> window.screen.height/2) {
-    //   appendChild (records[2].image)
-    // }
-    // if (screenWidth > window.screen.width/2 & screenHeight> window.screen.height/2) {
-    //   appendChild (records[3].image)
-    // }
-    
-  //recordThumbnail.addEventListener("click", openAlbumPage)
+  
