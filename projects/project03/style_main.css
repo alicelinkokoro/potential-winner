@@ -95,7 +95,17 @@ body {
   background: yellow;
 }
 
+.hide {
+  display: none;
+}
 
+.show {
+  display: flex;
+}
+
+.all {
+  display: none;
+}
 
 /* ul {
   display: flex;
