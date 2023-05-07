@@ -8,6 +8,8 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size:14px;
 }
 
 
@@ -18,6 +20,8 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+
 
 .division {
   width: 50vw;
@@ -32,3 +36,97 @@ body {
 .title img {
   width:20%;
 }
+
+
+
+
+
+/* CSS for filter */
+
+
+
+
+.container {
+  position: fixed; /* or absolute */
+  top: 40vh;
+  left: 40vw;
+  font-weight: 300;
+}
+
+.filters {
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  flex-direction: column;
+  display: flex;
+
+}
+
+.filter-btn {
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border: none;
+  vertical-align: middle;
+  margin: 3px;
+}
+
+.centerMargin {
+  margin: 5px;
+}
+
+
+.skala:hover {
+  background: blue;
+}
+
+.lastLeaf:hover {
+  background: whitesmoke;
+}
+
+.khmer:hover {
+  background: gray;
+}
+
+.changingPlaces:hover {
+  background: yellow;
+}
+
+
+
+/* ul {
+  display: flex;
+  /*   flex-wrap: wrap; */
+  /* justify-content: space-between;
+} */ 
+
+/* li {
+  list-style-type: none;
+  border: 2px solid #141414;
+  padding: 10px;
+  margin: 10px;
+  width: 20%;
+} */
+
+
+
+/* ul .card.hide {
+  display: none;
+}
+
+ul .card.show {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
