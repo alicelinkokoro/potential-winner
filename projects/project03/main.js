@@ -32,11 +32,12 @@ const records = [
      title: 'ChangingPlaces',
      releaseYear: 2003,
      artist: 'Tord Gustavsen Trio',
-     image: ['https://user-images.githubusercontent.com/101160183/235361054-f0dd8790-5bc7-4fda-b141-95de4a37acdf.jpg', 'https://user-images.githubusercontent.com/101160183/235361084-84a77e56-adbf-4e57-8b1f-03adfc20e718.jpg','https://user-images.githubusercontent.com/101160183/235361098-57cad074-39c6-432c-9fc6-dd91921b7543.jpg','https://user-images.githubusercontent.com/101160183/235361189-37be63d3-d072-4b75-bbf0-7921da75a298.jpg', 'https://user-images.githubusercontent.com/101160183/235361200-558cb491-b584-45ed-b003-7f2e0996139e.jpg', 'https://user-images.githubusercontent.com/101160183/235361208-e39d6','https://user-images.githubusercontent.com/101160183/235361249-f4b69a0b-770b-4a7c-bba0-e67af68aa11d.jpg','https://user-images.githubusercontent.com/101160183/235361256-e8c99163-aa4a-4d81-8870-84359de4c911.jpg'],
+     image: ['https://user-images.githubusercontent.com/101160183/235361054-f0dd8790-5bc7-4fda-b141-95de4a37acdf.jpg', 'https://user-images.githubusercontent.com/101160183/235361084-84a77e56-adbf-4e57-8b1f-03adfc20e718.jpg','https://user-images.githubusercontent.com/101160183/235361098-57cad074-39c6-432c-9fc6-dd91921b7543.jpg','https://user-images.githubusercontent.com/101160183/235361189-37be63d3-d072-4b75-bbf0-7921da75a298.jpg', 'https://user-images.githubusercontent.com/101160183/235361200-558cb491-b584-45ed-b003-7f2e0996139e.jpg','https://user-images.githubusercontent.com/101160183/235361249-f4b69a0b-770b-4a7c-bba0-e67af68aa11d.jpg','https://user-images.githubusercontent.com/101160183/235361256-e8c99163-aa4a-4d81-8870-84359de4c911.jpg'],
      link: '04Changing Places.html',
      audio: 'http://docs.google.com/uc?export=open&id=1vVyflfrhK9D8_UZtHMHuJwzEFK9GPWA5',
   }
 ]
+
 
   
   //render all images to page
@@ -60,7 +61,7 @@ const records = [
         image = document.createElement("img");
         image.setAttribute("src", records[i].image[h]);    
         
-
+        // I tried to add anchor to the images to link to sub-webpages but didn't manage to do it lol
         // a = document.createElement("a");
         // a.appendChild(image);
         // a.href = records[i].link;
@@ -70,7 +71,6 @@ const records = [
         if (records[i].title === 'Skala') {
           one.appendChild(list_item);
           list_item.appendChild(image);
-          
         }
 
         if (records[i].title === 'LastLeaf') {
