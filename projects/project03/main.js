@@ -141,11 +141,8 @@ function filterFn(event) {
         titles[i].classList.add('hide')
       }
 
-     
-
     }
-    
-    
+  
     
   }
 }
