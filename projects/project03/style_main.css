@@ -16,7 +16,7 @@ body {
 .flexContainer {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   height: 100vh;
   width: 100vw;
 }
