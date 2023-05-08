@@ -58,14 +58,19 @@ const records = [
     
 
         image = document.createElement("img");
-        image.setAttribute("src", records[i].image[h]);
+        image.setAttribute("src", records[i].image[h]);    
+        
 
-    
+          a = document.createElement("a");
+           a.appendChild(list_item);
+           list_item.appendChild (image);
+           a.href = records[i].link;
 
         if (records[i].title === 'Skala') {
           one.appendChild(list_item);
           list_item.appendChild(image);
         }
+
         if (records[i].title === 'LastLeaf') {
           two.appendChild(list_item);
           list_item.appendChild(image);
@@ -116,6 +121,7 @@ const records = [
 let filterBtns = document.querySelector('.filters');
  let titles = document.querySelectorAll(".title");
  let audio = document.createElement("audio");
+ 
 
 function filterFn(event) {
   console.log(event.target)
@@ -135,6 +141,8 @@ function filterFn(event) {
        
         audio.setAttribute("src", records[i].audio);
         audio.play()
+
+      
 
       } else {
         titles[i].classList.remove('show')
