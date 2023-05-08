@@ -7,7 +7,7 @@ const records = [
       releaseYear: 2011,
       artist: 'Mathias Eick',
       image: ['https://user-images.githubusercontent.com/101160183/235358677-02d94bb6-d409-4c10-a61f-cf9c1c3b2f28.jpg', 'https://user-images.githubusercontent.com/101160183/235358697-ae8a762a-f63e-44cc-9318-e5c8f36cd3f8.jpg','https://user-images.githubusercontent.com/101160183/235358915-c5ba30d5-d47f-4039-b018-77897458b8e2.jpg','https://user-images.githubusercontent.com/101160183/235358932-04e96860-ca96-4069-b5ab-bb8dc21de921.jpg', 'https://user-images.githubusercontent.com/101160183/235359041-9cac8165-135a-416e-b202-b959fb4cf412.jpg', 'https://user-images.githubusercontent.com/101160183/235359051-33e78a18-57b3-4854-8c16-947092ef05ff.jpg'],
-      link: '01Skala.html',
+      link: 'https://alicelinkokoro.github.io/potential-winner/projects/project03/01Skala.html',
       audio: 'http://docs.google.com/uc?export=open&id=1SpQ-q4ic-kW-0MVf6miRKhJbJmIgdxEI',
     },
 
@@ -61,14 +61,16 @@ const records = [
         image.setAttribute("src", records[i].image[h]);    
         
 
-          a = document.createElement("a");
-           a.appendChild(list_item);
-           list_item.appendChild (image);
-           a.href = records[i].link;
+        // a = document.createElement("a");
+        // a.appendChild(image);
+        // a.href = records[i].link;
+        // document.body.append(a);
+          
 
         if (records[i].title === 'Skala') {
           one.appendChild(list_item);
           list_item.appendChild(image);
+          
         }
 
         if (records[i].title === 'LastLeaf') {
@@ -83,6 +85,8 @@ const records = [
           four.appendChild(list_item);
           list_item.appendChild(image);
           }
+
+          
 
           let element = image.getBoundingClientRect();
 
@@ -110,8 +114,15 @@ const records = [
 
     window.addEventListener('load', renderRecordsToPage(records));
 
+    // image.addEventListener('click', triggerAlbumPage);
 
 
+
+
+
+
+
+    
 
 
 
