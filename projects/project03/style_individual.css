@@ -27,9 +27,11 @@ p{
 
 }
 
-audio {
+/* audio {
     color:black;
-}
+} */
+
+
 
 img{
     width: 550px;
@@ -40,3 +42,51 @@ header{
     
     padding-bottom: 10px;
 }
+
+/* audio */
+
+/* change the background color */
+audio::-webkit-media-controls-panel {
+    background-color: #141414;
+  }
+  
+  /* change the color of the mute button */
+  audio::-webkit-media-controls-mute-button {
+    background-color: #f4f4f4;
+    border-radius: 50%;
+  }
+  
+  /* change the color of the play button */
+  audio::-webkit-media-controls-play-button {
+    background-color: #f4f4f4;
+    border-radius: 50%;
+  }
+  
+  audio::-webkit-media-controls-play-button:hover {
+    background-color: tomato;
+  }
+  
+  /* change the color of the display time */
+  audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+  }
+  
+  audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+  }
+  
+  audio::-webkit-media-controls-timeline {
+    background-color: #F4F4F4;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  
+  /* change the color of the volume slide */
+  audio::-webkit-media-controls-volume-slider {
+    background-color: #B1D4E0;
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
