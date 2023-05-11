@@ -16,7 +16,7 @@ const records = [
         releaseYear: 2017,
         artist: 'Danish String Quartet',
         image: ['https://user-images.githubusercontent.com/101160183/235360611-3fe393b4-1e89-40ea-ad2b-17978ea273f9.jpg', 'https://user-images.githubusercontent.com/101160183/235360631-87867eb7-1ee9-41f7-9fd3-cd3badd4db73.jpg','https://user-images.githubusercontent.com/101160183/235360643-b07e5267-1c1d-4297-b90d-450b05abd255.jpg','https://user-images.githubusercontent.com/101160183/235360704-b7043871-6ddc-44be-8764-f05777670e5f.jpg','https://user-images.githubusercontent.com/101160183/235360721-a9bdb65a-5661-4b78-a218-851523647cca.jpg'],
-        link: '02Last Leaf.html',
+        link: 'https://alicelinkokoro.github.io/potential-winner/projects/project03/02Last%20Leaf.html',
         audio: 'http://docs.google.com/uc?export=open&id=1PVRtwBearsPvu_s7A7Lwy5HuItIC6Sdz',
     },
 
@@ -25,7 +25,7 @@ const records = [
       releaseYear: 2019,
       artist: 'Nils Petter Molvaer',
       image: ['https://user-images.githubusercontent.com/101160183/235360757-2af0675b-fb81-44f0-8217-16a66242ea18.jpg', 'https://user-images.githubusercontent.com/101160183/235360790-d853148f-f7a1-4319-8297-708515876e61.jpg', 'https://user-images.githubusercontent.com/101160183/235360809-2bee19a8-14d6-414d-a368-30bdd51984c3.jpg', 'https://user-images.githubusercontent.com/101160183/235360819-df84ac7a-4ab6-433c-bcf0-7a9081e28885.jpg','https://user-images.githubusercontent.com/101160183/235360837-dd690c7c-76ab-408d-a776-268a3870edc4.jpg','https://user-images.githubusercontent.com/101160183/235361016-c24fd175-d846-4bfa-9693-1c6aefa647e1.jpg','https://user-images.githubusercontent.com/101160183/235361028-2b83f546-9796-43b1-8159-ce24fe250e90.jpg'],
-      link: '03Khmer.html',
+      link: 'https://alicelinkokoro.github.io/potential-winner/projects/project03/03Khmer.html',
       audio:  'http://docs.google.com/uc?export=open&id=1Nb3cOz-fxD8r_s5GbnutXeiV3ryoIFr5',
   },
      {
@@ -33,7 +33,7 @@ const records = [
      releaseYear: 2003,
      artist: 'Tord Gustavsen Trio',
      image: ['https://user-images.githubusercontent.com/101160183/235361054-f0dd8790-5bc7-4fda-b141-95de4a37acdf.jpg', 'https://user-images.githubusercontent.com/101160183/235361084-84a77e56-adbf-4e57-8b1f-03adfc20e718.jpg','https://user-images.githubusercontent.com/101160183/235361098-57cad074-39c6-432c-9fc6-dd91921b7543.jpg','https://user-images.githubusercontent.com/101160183/235361189-37be63d3-d072-4b75-bbf0-7921da75a298.jpg', 'https://user-images.githubusercontent.com/101160183/235361200-558cb491-b584-45ed-b003-7f2e0996139e.jpg','https://user-images.githubusercontent.com/101160183/235361249-f4b69a0b-770b-4a7c-bba0-e67af68aa11d.jpg','https://user-images.githubusercontent.com/101160183/235361256-e8c99163-aa4a-4d81-8870-84359de4c911.jpg'],
-     link: '04Changing Places.html',
+     link: 'https://alicelinkokoro.github.io/potential-winner/projects/project03/04Changing%20Places.html',
      audio: 'http://docs.google.com/uc?export=open&id=1vVyflfrhK9D8_UZtHMHuJwzEFK9GPWA5',
   }
 ]
@@ -62,28 +62,28 @@ const records = [
         image.setAttribute("src", records[i].image[h]);    
         
         // I tried to add anchor to the images to link to sub-webpages but didn't manage to do it lol
-        // a = document.createElement("a");
-        // a.appendChild(image);
-        // a.href = records[i].link;
-        // document.body.append(a);
+        a = document.createElement("a");
+        a.appendChild(image);
+        a.href = records[i].link;
+        document.body.append(a);
           
 
         if (records[i].title === 'Skala') {
           one.appendChild(list_item);
-          list_item.appendChild(image);
+          list_item.appendChild(a);
         }
 
         if (records[i].title === 'LastLeaf') {
           two.appendChild(list_item);
-          list_item.appendChild(image);
+          list_item.appendChild(a);
         }
         if (records[i].title === 'Khmer') {
           three.appendChild(list_item);
-          list_item.appendChild(image);
+          list_item.appendChild(a);
         }
         if (records[i].title === 'ChangingPlaces') {
           four.appendChild(list_item);
-          list_item.appendChild(image);
+          list_item.appendChild(a);
           }
 
           
