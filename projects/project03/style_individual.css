@@ -27,11 +27,12 @@ p{
 
 }
 
-/* audio {
-    color:black;
-} */
 
-
+.text{
+  font-style: italic;
+  padding-bottom: 20px;
+  
+}
 
 img{
     width: 550px;
