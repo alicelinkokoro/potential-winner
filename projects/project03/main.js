@@ -26,7 +26,7 @@ const records = [
       artist: 'Nils Petter Molvaer',
       image: ['https://user-images.githubusercontent.com/101160183/235360757-2af0675b-fb81-44f0-8217-16a66242ea18.jpg', 'https://user-images.githubusercontent.com/101160183/235360790-d853148f-f7a1-4319-8297-708515876e61.jpg', 'https://user-images.githubusercontent.com/101160183/235360809-2bee19a8-14d6-414d-a368-30bdd51984c3.jpg', 'https://user-images.githubusercontent.com/101160183/235360819-df84ac7a-4ab6-433c-bcf0-7a9081e28885.jpg','https://user-images.githubusercontent.com/101160183/235360837-dd690c7c-76ab-408d-a776-268a3870edc4.jpg','https://user-images.githubusercontent.com/101160183/235361016-c24fd175-d846-4bfa-9693-1c6aefa647e1.jpg','https://user-images.githubusercontent.com/101160183/235361028-2b83f546-9796-43b1-8159-ce24fe250e90.jpg'],
       link: 'https://alicelinkokoro.github.io/potential-winner/projects/project03/03Khmer.html',
-      audio:  'https://alicelinkokoro.github.io/potential-winner/projects/project03/media/Nils Petter Molvær -Song Of Sand II.mp3',
+      audio:  'https://alicelinkokoro.github.io/potential-winner/projects/project03/media/Nils Petter Molvaer -Song Of Sand II.mp3',
   },
      {
      title: 'ChangingPlaces',
@@ -34,8 +34,8 @@ const records = [
      artist: 'Tord Gustavsen Trio',
      image: ['https://user-images.githubusercontent.com/101160183/235361054-f0dd8790-5bc7-4fda-b141-95de4a37acdf.jpg', 'https://user-images.githubusercontent.com/101160183/235361084-84a77e56-adbf-4e57-8b1f-03adfc20e718.jpg','https://user-images.githubusercontent.com/101160183/235361098-57cad074-39c6-432c-9fc6-dd91921b7543.jpg','https://user-images.githubusercontent.com/101160183/235361189-37be63d3-d072-4b75-bbf0-7921da75a298.jpg', 'https://user-images.githubusercontent.com/101160183/235361200-558cb491-b584-45ed-b003-7f2e0996139e.jpg','https://user-images.githubusercontent.com/101160183/235361249-f4b69a0b-770b-4a7c-bba0-e67af68aa11d.jpg','https://user-images.githubusercontent.com/101160183/235361256-e8c99163-aa4a-4d81-8870-84359de4c911.jpg'],
      link: 'https://alicelinkokoro.github.io/potential-winner/projects/project03/04Changing%20Places.html',
-     audio: 'http://docs.google.com/uc?export=open&id=1vVyflfrhK9D8_UZtHMHuJwzEFK9GPWA5',
-  }
+     audio: 'https://alicelinkokoro.github.io/potential-winner/projects/project03/media/Tord Gustavsen Trio -Graceful Touch.mp3',
+  },
 ]
 
 
