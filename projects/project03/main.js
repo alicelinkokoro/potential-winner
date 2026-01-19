@@ -17,7 +17,7 @@ const records = [
         artist: 'Danish String Quartet',
         image: ['https://user-images.githubusercontent.com/101160183/235360611-3fe393b4-1e89-40ea-ad2b-17978ea273f9.jpg', 'https://user-images.githubusercontent.com/101160183/235360631-87867eb7-1ee9-41f7-9fd3-cd3badd4db73.jpg','https://user-images.githubusercontent.com/101160183/235360643-b07e5267-1c1d-4297-b90d-450b05abd255.jpg','https://user-images.githubusercontent.com/101160183/235360704-b7043871-6ddc-44be-8764-f05777670e5f.jpg','https://user-images.githubusercontent.com/101160183/235360721-a9bdb65a-5661-4b78-a218-851523647cca.jpg'],
         link: 'https://alicelinkokoro.github.io/potential-winner/projects/project03/02Last%20Leaf.html',
-        audio: 'http://docs.google.com/uc?export=open&id=1PVRtwBearsPvu_s7A7Lwy5HuItIC6Sdz',
+        audio: 'https://alicelinkokoro.github.io/potential-winner/projects/project03/media/Danish String Quartet -Shore.mp3',
     },
 
     {
