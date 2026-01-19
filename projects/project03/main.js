@@ -26,7 +26,7 @@ const records = [
       artist: 'Nils Petter Molvaer',
       image: ['https://user-images.githubusercontent.com/101160183/235360757-2af0675b-fb81-44f0-8217-16a66242ea18.jpg', 'https://user-images.githubusercontent.com/101160183/235360790-d853148f-f7a1-4319-8297-708515876e61.jpg', 'https://user-images.githubusercontent.com/101160183/235360809-2bee19a8-14d6-414d-a368-30bdd51984c3.jpg', 'https://user-images.githubusercontent.com/101160183/235360819-df84ac7a-4ab6-433c-bcf0-7a9081e28885.jpg','https://user-images.githubusercontent.com/101160183/235360837-dd690c7c-76ab-408d-a776-268a3870edc4.jpg','https://user-images.githubusercontent.com/101160183/235361016-c24fd175-d846-4bfa-9693-1c6aefa647e1.jpg','https://user-images.githubusercontent.com/101160183/235361028-2b83f546-9796-43b1-8159-ce24fe250e90.jpg'],
       link: 'https://alicelinkokoro.github.io/potential-winner/projects/project03/03Khmer.html',
-      audio:  'http://docs.google.com/uc?export=open&id=1Nb3cOz-fxD8r_s5GbnutXeiV3ryoIFr5',
+      audio:  'https://alicelinkokoro.github.io/potential-winner/projects/project03/media/Nils Petter Molvær -Song Of Sand II.mp3',
   },
      {
      title: 'ChangingPlaces',
